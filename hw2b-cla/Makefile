@@ -1,19 +1,8 @@
-# source verilog files
-SYNTH_SOURCES=cla.sv
-TOP_SYNTH_MODULE=cla
+SV_SYNTH_SOURCES=system/System.sv
+VERILOG_SYNTH_SOURCE=system/System.v
 
-# testbench files
-TESTBENCH=dummy.sv
-TOP_TESTBENCH_MODULE=dummy
+TOP_MODULE_RESOURCE_CHECK=SystemDemo
+TOP_MODULE_DEMO=SystemDemo
+CONSTRAINTS=../common/constraints/ulx3s.lpf
 
-# zip file that gets uploaded
-#ZIP_SOURCES=rca.sv output/rca4.bit
-#ZIP_FILE=rca.zip
-
-# implementation files
-#IMPL_SOURCES=$(SYNTH_SOURCES)
-#TOP_IMPL_MODULE=rca4
-#CONSTRAINTS=lab1.xdc 
-#BITSTREAM_FILENAME=rca4.bit
-
-include ../common/make/vivado.mk
+include ../common/make/fpga.mk

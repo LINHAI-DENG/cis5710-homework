@@ -1,10 +1,8 @@
 # source verilog files
-SYNTH_SOURCES=rca.sv
-TOP_SYNTH_MODULE=rca4_demo
-
-# zip file that gets uploaded
-ZIP_SOURCES=rca.sv fpga_build/rca4_demo.bit
-ZIP_FILE=rca.zip
+SV_SYNTH_SOURCES=rca.sv
+VERILOG_SYNTH_SOURCE=rca.v
+TOP_MODULE_RESOURCE_CHECK=rca4_demo
+TOP_MODULE_DEMO=rca4_demo
 
 CONSTRAINTS=hw1.lpf
 
